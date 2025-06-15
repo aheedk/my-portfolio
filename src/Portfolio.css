@@ -1,0 +1,112 @@
+:root {
+    --color-primary: #53b7d8;
+    --color-secondary: #f3f4f6;
+    --color-accent: #2563eb;
+    --color-text: #111827;
+    --color-background-start: #e0f7fa;
+    --color-background-end: #ffffff;
+    --color-section-start: #a8eefa;
+    --color-section-end: #b2ebf2;
+    --color-card-start: #b2ebf2;
+    --color-card-end: #e0f7fa;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, var(--color-background-start), var(--color-background-end));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-text);
+  }
+  
+  .portfolio-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .nav a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .section {
+    margin-top: 40px;
+    padding: 30px;
+    background: linear-gradient(to bottom right, var(--color-section-start), var(--color-section-end));
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 8px;
+  }
+  
+  .card {
+    background: linear-gradient(to bottom right, var(--color-card-start), var(--color-card-end));
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .subtitle {
+    font-style: italic;
+    margin: 8px 0 12px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--color-accent);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: #1b4f90;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+  }
+  
