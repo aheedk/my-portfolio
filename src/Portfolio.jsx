@@ -171,7 +171,7 @@ export default function Portfolio() {
         transition={{ delay: 1.0 }}
       >
         <h2>Get In Touch</h2>
-        <a className="button" href="https://github.com/aheedk/Portfolio" target="_blank" rel="noopener noreferrer">
+        <a className="button" href="https://github.com/aheedk" target="_blank" rel="noopener noreferrer">
           View on GitHub
         </a>
       </motion.section>
